@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scout - Lead Generation System
 
-## Getting Started
+Intelligent lead generation and enrichment tool for finding potential clients and partners.
 
-First, run the development server:
+## Features
+
+- **Directory Search** - Find people and organizations in specific niches
+- **Contact Extraction** - Email, phone, social handles
+- **Lead Enrichment** - Company info, tech stack, key people via Perplexity AI
+- **Validation** - Verify contact information accuracy
+- **Export** - Download leads as JSON/CSV
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Perplexity AI API (sonar model)
+- Brave Search API (fallback)
+
+## API Integration
+
+### Perplexity AI
+Uses the "sonar" model for:
+- Lead discovery
+- Contact enrichment
+- Query improvement
+
+### Brave Search
+Used as fallback when Perplexity rate-limited
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Environment variables:
+```
+PERPLEXITY_API_KEY=your_key_here
+BRAVE_API_KEY=your_key_here
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Running on PM2 as `scout`:
+- Port: 3032
+- Domain: scout.robert-claw.com (pending DNS)
 
-## Learn More
+```bash
+pm2 restart scout
+pm2 logs scout
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Use Cases
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Dandelion Labs** - Find AI startups needing MVP development
+2. **MappingBitcoin.com** - Verify and enrich 22k+ Bitcoin businesses
+3. **Leon Acosta** - Find biohacking content opportunities
+4. **Kavaka.org** - Community member discovery
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Search Targets
 
-## Deploy on Vercel
+Configurable per search:
+- emails
+- phones
+- websites
+- whatsapp
+- instagram
+- github
+- twitter
+- linkedin
+- telegram
+- discord
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Data Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+interface Lead {
+  url: string
+  title: string
+  description: string
+  contacts: {
+    emails: string[]
+    phones: string[]
+    websites: string[]
+    // ... social handles
+  }
+  relevanceScore: number
+  tags: string[]
+}
+```
+
+## Recent Fixes
+
+- **Feb 8, 2026**: Updated Perplexity model from deprecated `llama-3.1-sonar-large-128k-online` to `sonar`
+
+## Roadmap
+
+- [ ] DNS configuration (scout.robert-claw.com)
+- [ ] Validation system for fake handles
+- [ ] Link validation (fetch URLs to verify)
+- [ ] Weekly digest emails
+- [ ] Community Manager integration
+- [ ] Export formats (CSV, JSON, Excel)
+
+Built by Robert Claw 🦞
+
+Last updated: February 8, 2026
