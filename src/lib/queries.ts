@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-import { Query } from './types';
+import { Query, SearchTarget, SearchSource } from './types';
 
 const DATA_PATH = path.join(process.cwd(), 'data', 'queries.json');
 
@@ -32,7 +32,13 @@ export async function getQueryById(id: string): Promise<Query | null> {
   return queries.find(q => q.id === id) || null;
 }
 
-export async function createQuery(data: { projectId: string; searchTerm: string }): Promise<Query> {
+export async function createQuery(data: { 
+  projectId: string; 
+  searchTerm: string; 
+  improvedQuery?: string;
+  targets?: SearchTarget[];
+  sources?: SearchSource[];
+}): Promise<Query> {
   const queries = await readQueries();
   const now = new Date().toISOString();
   
@@ -40,6 +46,9 @@ export async function createQuery(data: { projectId: string; searchTerm: string 
     id: `query_${uuidv4().slice(0, 8)}`,
     projectId: data.projectId,
     searchTerm: data.searchTerm,
+    improvedQuery: data.improvedQuery,
+    targets: data.targets || ['emails'],
+    sources: data.sources || ['all'],
     status: 'pending',
     resultCount: 0,
     createdAt: now,
@@ -51,7 +60,10 @@ export async function createQuery(data: { projectId: string; searchTerm: string 
   return query;
 }
 
-export async function updateQuery(id: string, data: Partial<Pick<Query, 'searchTerm' | 'status' | 'lastRun' | 'resultCount'>>): Promise<Query | null> {
+export async function updateQuery(
+  id: string, 
+  data: Partial<Pick<Query, 'searchTerm' | 'status' | 'lastRun' | 'resultCount' | 'targets'>>
+): Promise<Query | null> {
   const queries = await readQueries();
   const index = queries.findIndex(q => q.id === id);
   

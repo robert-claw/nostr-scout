@@ -33,6 +33,9 @@ export async function POST(request: NextRequest) {
     const query = await createQuery({
       projectId: body.projectId,
       searchTerm: body.searchTerm,
+      improvedQuery: body.improvedQuery,
+      targets: body.targets,  // SearchTarget[]
+      sources: body.sources,  // SearchSource[]
     });
     
     return NextResponse.json({ success: true, data: query }, { status: 201 });

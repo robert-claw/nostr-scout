@@ -1,0 +1,46 @@
+{
+  "queries": [
+    {
+      "id": "1770407461320",
+      "projectId": "proj_001",
+      "searchTerm": "nostr influencers",
+      "entityType": "all",
+      "status": "failed",
+      "resultCount": 0,
+      "createdAt": "2026-02-06T19:51:01.320Z",
+      "updatedAt": "2026-02-06T19:51:01.554Z"
+    },
+    {
+      "id": "1770407805105",
+      "projectId": "proj_001",
+      "searchTerm": "nostr project founders",
+      "entityType": "all",
+      "status": "running",
+      "resultCount": 0,
+      "createdAt": "2026-02-06T19:56:45.105Z",
+      "updatedAt": "2026-02-06T19:56:45.105Z"
+    },
+    {
+      "id": "1770407893982",
+      "projectId": "proj_001",
+      "searchTerm": "nostr project founders",
+      "entityType": "all",
+      "status": "completed",
+      "resultCount": 15,
+      "createdAt": "2026-02-06T19:58:13.982Z",
+      "updatedAt": "2026-02-06T19:58:21.083Z",
+      "lastRun": "2026-02-06T19:58:21.083Z"
+    },
+    {
+      "id": "1770408016081",
+      "projectId": "proj_001",
+      "searchTerm": "nostr developers",
+      "entityType": "person",
+      "status": "completed",
+      "resultCount": 20,
+      "createdAt": "2026-02-06T20:00:16.081Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z",
+      "lastRun": "2026-02-06T20:00:25.790Z"
+    }
+  ]
+}

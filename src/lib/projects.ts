@@ -44,7 +44,7 @@ export async function createProject(data: { name: string; description?: string }
   return project;
 }
 
-export async function updateProject(id: string, data: Partial<Pick<Project, 'name' | 'description'>>): Promise<Project | null> {
+export async function updateProject(id: string, data: Partial<Project>): Promise<Project | null> {
   const projects = await readProjects();
   const index = projects.findIndex(p => p.id === id);
   

@@ -1,1 +1,824 @@
-[]
+[
+  {
+    "id": "lead_01bc112c",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://nostr.how/en/relays",
+    "title": "What are Nostr Relays?",
+    "description": "Relays are like the backend servers for Nostr.",
+    "emails": [
+      "erskingardner@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.634Z",
+    "updatedAt": "2026-02-06T19:11:55.634Z"
+  },
+  {
+    "id": "lead_64af3e34",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://nostr.how/en/relay-implementations",
+    "title": "Relay Implementations - Nostr",
+    "description": "Stirfry: A database-less relay implementation in C++. ... søstr: A private nostr relay written in rust, saves all notes from one pubkey and publish them to anyone that requests them",
+    "emails": [
+      "erskingardner@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.636Z",
+    "updatedAt": "2026-02-06T19:11:55.636Z"
+  },
+  {
+    "id": "lead_a33455cb",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://sr.ht/~gheartsfield/nostr-rs-relay/",
+    "title": "nostr-rs-relay: Nostr relay in rust",
+    "description": "This is a nostr relay, written in Rust. It currently supports the entire relay protocol, and persists data with SQLite. There is experimental support for Postgresql. The project master repository is available on sourcehut, and is mirrored on GitHub.",
+    "emails": [
+      "sr.ht-support@lists.sr.ht"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.637Z",
+    "updatedAt": "2026-02-06T19:11:55.637Z"
+  },
+  {
+    "id": "lead_58ecc002",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://pypi.org/project/nostr-relay/",
+    "title": "nostr-relay · PyPI",
+    "description": "Report project as malware · This is a Python 3.9+ implementation of a nostr relay. Stores data in LMDB, SQLite or Postgresql. See Storage · Scalable to thousands of concurrent clients · Dynamic allow/deny lists · Configurable garbage collector · Configurable event validators ·",
+    "emails": [
+      "dave@st.germa.in"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.638Z",
+    "updatedAt": "2026-02-06T19:11:55.638Z"
+  },
+  {
+    "id": "lead_ddf60e74",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://github.com/cameri/nostream",
+    "title": "GitHub - cameri/nostream: A Nostr Relay written in TypeScript",
+    "description": "This is a nostr relay, written in Typescript. This implementation is production-ready. See below for supported features. The project master repository is available on GitHub.",
+    "emails": [],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.640Z",
+    "updatedAt": "2026-02-06T19:11:55.640Z"
+  },
+  {
+    "id": "lead_4b8c7498",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://nostr.info/relays/",
+    "title": "Relays | nostr.info",
+    "description": "nostr.info · Show Relays · Show Events · Filter by Relay performance: Sent us many without dropping · Sent us many events · Sent us events · Accepted WebSocket connection · All · Filter by Kind: kind-*: All kinds · kind-?: Stuff we don&#x27;t handle yet ·",
+    "emails": [
+      "leo@walletscrutiny.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.642Z",
+    "updatedAt": "2026-02-06T19:11:55.642Z"
+  },
+  {
+    "id": "lead_5cb7b9bf",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://github.com/CodyTseng/nostr-relay-tray",
+    "title": "GitHub - CodyTseng/nostr-relay-tray: A nostr relay for desktop, available on macOS, Windows, and Linux.",
+    "description": "Web of Trust (WoT): Accepts events from trusted users or relays. Proof of Work (PoW): Accepts events that meet a certain computational difficulty. ... If at least one filter is enabled, the event must pass at least one. If all filters are disabled, the event is automatically accepted. If you like this project, you can buy me a coffee :) ... The ostrich element within the icon is sourced from nostr...",
+    "emails": [
+      "codytseng@getalby.com",
+      "u003ecodytseng@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.644Z",
+    "updatedAt": "2026-02-06T19:11:55.644Z"
+  },
+  {
+    "id": "lead_cfa032ab",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://github.com/aljazceru/awesome-nostr",
+    "title": "GitHub - aljazceru/awesome-nostr: nostr.net - awesome-nostr is a collection of projects and resources built on nostr to help developers and users find new things",
+    "description": "nostr-relaypool-ts - a TypeScript relay pool library on top of nostr-tools that simplifies handling subscriptions to multiple servers · nostr-ruby - a Ruby implementation of the nostr protocol · nostr-spring-boot-starter - Spring boot starter projects for building Nostr applications.",
+    "emails": [
+      "nostrich@nostrich.house",
+      "u003enostrich@nostrich.house"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.646Z",
+    "updatedAt": "2026-02-06T19:13:07.277Z"
+  },
+  {
+    "id": "lead_e4c53a60",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://github.com/BlockChainCaffe/Nostr-Relay-Setup-Guide",
+    "title": "GitHub - BlockChainCaffe/Nostr-Relay-Setup-Guide: A complete step by step setup guide for Nostr relay based on nostr-rs-relay",
+    "description": "And no, there is no way you can do that properly in &quot;5 minutes&quot; The steps are based mostly on Amazon AWS EC2 instance but it can be easily applied to any other VPS provider like DigitalOcean, OVH, Linode etc... It will use nostr-rs-relay, a Rust implementation that uses SQLite database.",
+    "emails": [
+      "ubuntu@ec2-X-XXX-XXX-XXX.eu-central-1.compute.amazonaws.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.648Z",
+    "updatedAt": "2026-02-06T19:11:55.648Z"
+  },
+  {
+    "id": "lead_f010837d",
+    "queryId": "query_6ab20046",
+    "projectId": "proj_001",
+    "url": "https://voltage.cloud/blog/the-essential-guide-to-nostr-relays",
+    "title": "The Essential Guide to Nostr Relays | Voltage | Voltage",
+    "description": "Decentralized tools like Nostr are becoming more popular for developers and builders of new tech. Nostr, a decentralized communication protocol, is one of the latest examples of easy-to-use software to build on. Here&#x27;s a comprehensive guide to understanding what Nostr relays are, their functionality, and how you can get involved.",
+    "emails": [],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:11:55.650Z",
+    "updatedAt": "2026-02-06T19:11:55.650Z"
+  },
+  {
+    "id": "lead_9ff76e8f",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://nostr.how/en/nostr-projects",
+    "title": "Nostr Resources & Links",
+    "description": "This is a collection of other Nostr resources and projects that we&#x27;ve come across.",
+    "emails": [
+      "erskingardner@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.275Z",
+    "updatedAt": "2026-02-06T19:13:07.275Z"
+  },
+  {
+    "id": "lead_52926761",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://www.coindesk.com/tech/2023/02/01/decentralized-social-media-project-nostrs-damus-gets-listed-on-apple-app-store",
+    "title": "Decentralized Social Media Project Nostr's Damus Gets Listed on Apple App Store",
+    "description": "According to the Nostr website, Damus is one of several Nostr projects, including <strong>Anigma, a Telegram-like chat; Nostros, a mobile client; and Jester, a chess application</strong>.",
+    "emails": [
+      "brad@coindesk.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.278Z",
+    "updatedAt": "2026-02-06T19:13:07.278Z"
+  },
+  {
+    "id": "lead_56428546",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://nostr.how/en/the-protocol",
+    "title": "The Nostr Protocol",
+    "description": "Nostr Projects · Contribute · ⚡ Donate to Nostr.how · Made with 💜 &amp; ⚡ by JeffG · Nostr · ⚡ Donate to Nostr.how · EnglishEspañolDeutschFrançaisItalianoPortuguêsDutchУкраїнська日本語中文پارسی · This is a high-level overview of the Nostr protocol with details on Event types and how Nostr Implementation Possibilities (NIPs) work.",
+    "emails": [
+      "erskingardner@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.279Z",
+    "updatedAt": "2026-02-06T19:13:07.279Z"
+  },
+  {
+    "id": "lead_a8d8dc18",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://nostr.info/",
+    "title": "nostr.info | What is going on in the world of nostr. Stats, Charts, Live Monitors, Resources, …",
+    "description": "“nostr” stands for “Notes and Other Stuff Transmitted by Relays” and is <strong>an open protocol for censorship-resistant global networks created by @fiatjaf</strong>. You can find a very decent overview of tools and projects at aljazceru/awesome-nostr!",
+    "emails": [
+      "leo@walletscrutiny.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.280Z",
+    "updatedAt": "2026-02-06T19:13:38.479Z"
+  },
+  {
+    "id": "lead_e3b40aec",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://opensats.org/blog/10th-wave-of-nostr-grants",
+    "title": "Tenth Wave of Nostr Grants",
+    "description": "OpenSats is funding seven more open-source projects advancing the nostr ecosystem.",
+    "emails": [
+      "arvin@opensats.org",
+      "julian@opensats.org"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.280Z",
+    "updatedAt": "2026-02-06T19:13:07.280Z"
+  },
+  {
+    "id": "lead_dbefda8c",
+    "queryId": "query_cac617e8",
+    "projectId": "proj_001",
+    "url": "https://nostr.how/en/get-started",
+    "title": "Get started with Nostr",
+    "description": "Nostr Projects · Contribute · ⚡ Donate to Nostr.how · Made with 💜 &amp; ⚡ by JeffG · Nostr · ⚡ Donate to Nostr.how · EnglishEspañolDeutschFrançaisItalianoPortuguêsDutchУкраїнська日本語中文پارسی · This guide will help you understand the basics of Nostr and get you all set up and ready to use Nostr with a new account.",
+    "emails": [
+      "erskingardner@getalby.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:07.281Z",
+    "updatedAt": "2026-02-06T19:13:07.281Z"
+  },
+  {
+    "id": "lead_a646ca3c",
+    "queryId": "query_57f6936d",
+    "projectId": "proj_001",
+    "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240205709W/abstract",
+    "title": "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead - ADS",
+    "description": "Nostr is a <strong>decentralized social network launched in 2022, emphasizing high availability and censorship resistance</strong>. Since launching, it has gained substantial attention, boasting over 100 million posts.",
+    "emails": [
+      "46062cbe0aeb7a3b2bb4c3a9b8cd1ac7@o1060269.ingest.us.sentry.io"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:30.935Z",
+    "updatedAt": "2026-02-06T19:13:38.478Z"
+  },
+  {
+    "id": "lead_5bfe726b",
+    "queryId": "query_57f6936d",
+    "projectId": "proj_001",
+    "url": "https://voltage.cloud/blog/exploring-6-use-cases-of-nostr-beyond-messaging",
+    "title": "Exploring 6 Use Cases of Nostr Protocol | Voltage Blog | Voltage",
+    "description": "Nostr&#x27;s transparent and secure communication framework can also be leveraged to build decentralized marketplaces. In these marketplaces, buyers and sellers can interact directly without intermediaries, reducing costs and enhancing privacy. Given Nostr&#x27;s censorship resistance, such a marketplace would be accessible anywhere, fostering a truly global trade environment.",
+    "emails": [],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:30.939Z",
+    "updatedAt": "2026-02-06T19:13:38.480Z"
+  },
+  {
+    "id": "lead_095c308c",
+    "queryId": "query_57f6936d",
+    "projectId": "proj_001",
+    "url": "https://arxiv.org/html/2402.05709v2",
+    "title": "An Empirical Analysis of the Nostr Social Network: Decentralization, Availability, and Replication Overhead",
+    "description": "These unique features have garnered significant attention from users, and fostered numerous applications built atop of Nostr. To date, the Nostr ecosystem encompasses more than 600 active relays (Nostr.Watch, 2023), more than 9 million users (with a profile and contact list), and 100 million posts (Nostr.Band, 2023).",
+    "emails": [
+      "ywei906@connect.hkust-gz.edu.cn",
+      "gtyson@ust.hk"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:30.940Z",
+    "updatedAt": "2026-02-06T19:13:38.481Z"
+  },
+  {
+    "id": "lead_ea23e2ff",
+    "queryId": "query_57f6936d",
+    "projectId": "proj_001",
+    "url": "https://www.cointribune.com/en/nostr-pour-les-debutants-tout-ce-que-vous-devez-savoir-sur-le-protocole-2/",
+    "title": "Nostr for Beginners: A Complete Guide",
+    "description": "Communication security is ensured by the use of cryptographic keys, and privacy is respected thanks to the absence of centralized data storage. The openness of the protocol encourages innovation and diversity of applications, allowing users to customize their online experience. The Nostr network also has an eponymous cryptocurrency that facilitates exchanges within this ecosystem.",
+    "emails": [
+      "email@domaine.com"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:30.941Z",
+    "updatedAt": "2026-02-06T19:13:38.482Z"
+  },
+  {
+    "id": "lead_377bad3a",
+    "queryId": "query_57f6936d",
+    "projectId": "proj_001",
+    "url": "https://fossunited.org/c/pune/punefoss/cfp/9g5kqp198l",
+    "title": "Nostr: Pioneering an Open-Source Social Media Network in the Age of Facebook, Twitter, and Instagram",
+    "description": "Nostr: <strong>Pioneering an Open-Source Social Media Network in the Age of Facebook, Twitter, and Instagram</strong> is a Talk proposal for PuneFOSS 2.1. In an era dominated by social media giants like Facebook, Twitter, and Instagram, the way information flows ...",
+    "emails": [
+      "foundation@fossunited.org"
+    ],
+    "source": "brave",
+    "status": "new",
+    "createdAt": "2026-02-06T19:13:30.943Z",
+    "updatedAt": "2026-02-06T19:13:38.482Z"
+  },
+  {
+    "id": "lead_92ee5d5b",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.coindesk.com/tech/2023/06/08/jack-dorsey-backed-nostr-creator-collaborates-with-employer-zebedee-on-new-social-media-layer",
+    "title": "Jack Dorsey-backed Nostr Creator Collaborates With Zebedee on New Social Media Layer",
+    "description": "The shadowy self-taught Bitcoin coder and creator of decentralized social media protocol Nostr who goes by the pseudonym Fiatjaf has collaborated with his employer, Zebedee, a Bitcoin gaming and payments company, on a social media layer that will soon launch on Zebedee’s flagship app, according to the firm.",
+    "emails": [
+      "frederick.munawa@coindesk.com"
+    ],
+    "phones": [],
+    "websites": [
+      "https://pagead2.googlesyndication.com",
+      "https://tpc.googlesyndication.com",
+      "https://www.googletagservices.com",
+      "https://pubsubhubbub.appspot.com/\"/><link",
+      "https://x.com/intent/tweet?utm_source=twitter&amp;text=Jack+Dorsey-backed+Nostr+Creator+Collaborates+With+Zebedee+on+New+Social+Media+Layer+https%3A%2F%2Fwww.coindesk.com%2Ftech%2F2023%2F06%2F08%2Fjack-dorsey-backed-nostr-creator-collaborates-with-employer-zebedee-on-new-social-media-layer+via+%40coindesk&amp;editorial=utm_content&amp;social=utm_medium&amp;organic=utm_term\"><span><svg",
+      "https://nbd.wtf/\""
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "coindesk",
+      "context",
+      "coindesk.com"
+    ],
+    "github": [
+      "nostr-protocol"
+    ],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "high",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.666Z",
+    "updatedAt": "2026-02-06T19:33:53.666Z"
+  },
+  {
+    "id": "lead_2b477f48",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.coindesk.com/tech/2022/12/15/jack-dorsey-gives-decentralized-social-network-nostr-14-btc-in-funding",
+    "title": "Jack Dorsey Gives Decentralized Social Network Nostr 14 BTC in Funding",
+    "description": "After it was reported that <strong>Jack Dorsey</strong> will donate $1 million annually to encrypted messaging app Signal, Koty Auditore took to Twitter to urge Dorsey to fund Nostr, following a blog post where Dorsey published his views on the need for a native internet protocol for social media.",
+    "emails": [
+      "george@coindesk.com"
+    ],
+    "phones": [],
+    "websites": [
+      "https://pagead2.googlesyndication.com",
+      "https://tpc.googlesyndication.com",
+      "https://www.googletagservices.com",
+      "https://pubsubhubbub.appspot.com/\"/><link",
+      "https://x.com/intent/tweet?utm_source=twitter&amp;text=Jack+Dorsey+Gives+Decentralized+Social+Network+Nostr+14+BTC+in+Funding+https%3A%2F%2Fwww.coindesk.com%2Ftech%2F2022%2F12%2F15%2Fjack-dorsey-gives-decentralized-social-network-nostr-14-btc-in-funding+via+%40coindesk&amp;editorial=utm_content&amp;social=utm_medium&amp;organic=utm_term\"><span><svg",
+      "https://www.reuters.com/technology/jack-dorsey-says-he-will-give-1-mln-per-year-signal-app-2022-12-13/\""
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "coindesk",
+      "context",
+      "coindesk.com"
+    ],
+    "github": [
+      "nostr-protocol"
+    ],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "high",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.668Z",
+    "updatedAt": "2026-02-06T19:33:53.668Z"
+  },
+  {
+    "id": "lead_7bcb79c4",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.businessinsider.com/jack-dorsey-fiatjaf-nostr-donation-2024-6",
+    "title": "Jack Dorsey Gave $10M to Nostr Dev Devoted to Fascist 'Guru' - Business Insider",
+    "description": "The founder is a Brazilian man who appears to be a big fan of a fascist conspiracy theorist. In his quest to support alternative social-media platforms, Twitter&#x27;s cofounder Jack Dorsey unwittingly funded a developer who&#x27;s a follower of a Brazilian fascist, according to archived webpages and business records. The funding, which supported the development of the decentralized social-media protocol Nostr, comes as Silicon Valley&#x27;s rightward political drift has become more apparent and as some in tech&#x27;s elite push back against what they perceive as overreach in censorship and diversity, equity and inclusion initiatives.",
+    "emails": [
+      "group-subscriptions@businessinsider.com",
+      "klong@insider.com"
+    ],
+    "phones": [],
+    "websites": [
+      "https://i.insider.com/665f24cc1cd3b177904307c0?width=1200&format=jpeg\">",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=700\"",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=400&format=jpeg&auto=webp",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=500&format=jpeg&auto=webp",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=700&format=jpeg&auto=webp",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=1000&format=jpeg&auto=webp",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=1300&format=jpeg&auto=webp",
+      "https://i.insider.com/665f2442d0b8e1c832cbb3eb?width=2000&format=jpeg&auto=webp",
+      "https://ads.rubiconproject.com/prebid/10306.js\",\"timeout\":1500},\"permutive\":{\"enabled\":true,\"projectId\":\"3aba5292-ba75-422b-8715-bd21146f7836\",\"publicKey\":\"6f1150a7-e587-49c6-b439-a4b7ee68a5a7\",\"version\":1},\"doubleverify\":{\"enabled\":true,\"timeout\":1500}},\"preroll\":{\"jwplayer\":{\"vendor\":\"jwplayer\",\"enabled\":true,\"sizes\":{\"desktop\":[\"640x480\"]},\"placement\":{\"strategyPlayer\":{\"increment\":2}},\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"pageTargetingKeys\":[\"abTest\",\"adconsent\",\"AotID\",\"page_id\",\"reaction\",\"tag\",\"topix\",\"ABS\",\"BSC\",\"IDS\",\"TVP\",\"VLP\"],\"videoTargeting\":{\"video_playtype\":\"autoplay\",\"video_module\":\"now-watch\",\"permutive\":true},\"services\":{\"prebid\":{\"settings\":{\"mediationLayerAdServer\":\"dfp\",\"floorPriceCents\":1,\"floorPriceCurrency\":\"usd\",\"bidTimeout\":2500,\"buckets\":[{\"increment\":0.01,\"min\":0.01,\"max\":0.02},{\"increment\":0.02,\"min\":0.02,\"max\":3},{\"increment\":0.05,\"min\":3,\"max\":10},{\"increment\":0.1,\"min\":10,\"max\":20},{\"increment\":1,\"min\":20,\"max\":50}],\"consentManagement\":{\"usp\":{\"cmpApi\":\"iab\",\"timeout\":5000}}},\"bidders\":[{\"name\":\"PubMatic\",\"pubid\":\"160661\",\"id\":\"6415561\"},{\"name\":\"Rubicon\",\"pubid\":\"10306\",\"siteId\":\"572690\",\"zoneId\":\"3623912\"},{\"name\":\"AppNexus\",\"id\":\"24935590\"},{\"name\":\"OpenX\",\"id\":\"561469376\",\"delDomain\":\"business-insider-d.openx.net\"},{\"name\":\"criteo\",\"networkId\":7895,\"zoneId\":1807264},{\"name\":\"IndexExchange\",\"id\":\"1157202\"}]}},\"advertising\":{\"vpaidcontrols\":true,\"adscheduleid\":\"00000000\",\"client\":\"googima\",\"schedule\":{\"adbreak-preroll\":{\"offset\":\"pre\"}},\"autoplayadsmuted\":true},\"gamAdTag\":{\"gdfp_req\":1,\"env\":\"vp\",\"output\":\"vast\",\"unviewed_position_start\":1,\"impl\":\"s\",\"cmsid\":642,\"vpos\":\"preroll\"},\"placementId\":\"XqOVG7Ek\",\"region\":\"pre-roll-rail\",\"onlyOn\":\"desktop\"}},\"regions\":{\"sub-nav\":{\"region\":\"sub-nav\",\"enabled\":true,\"sizes\":{\"phone\":[\"3x1\",\"320x50\",\"300x50\"],\"tablet\":[\"728x90\",\"320x50\",\"3x1\"],\"desktop\":[\"970x250\",\"970x90\",\"728x90\",\"3x1\"]},\"deviceOverrides\":{\"desktop\":{\"amazonSizes\":[\"728x90\",\"970x250\",\"970x90\"],\"onlyOn\":\"desktop\"},\"mobile\":{\"amazonSizes\":[\"320x50\",\"300x50\"],\"onlyOn\":\"mobile\"}},\"features\":{\"callout\":{\"enabled\":false,\"position\":\"center\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":false,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":false},\"tracking\":{},\"destroySlotsOutOfView\":{\"enabled\":false},\"sticky\":{\"enabled\":true,\"rollUp\":true,\"rollUpTimeout\":5000,\"closeButton\":true,\"hideWhen\":\"[data-is-interscroller]\"}},\"amazonSizes\":[\"728x90\",\"970x250\",\"970x90\"],\"onlyOn\":\"desktop\"},\"adhesive\":{\"region\":\"adhesive\",\"enabled\":true,\"sizes\":{\"phone\":[\"320x50\",\"300x50\",\"320x100\"]},\"amazonSizes\":[\"320x50\",\"300x50\"],\"onlyOn\":\"mobile\",\"force\":1,\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":false,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false,\"preventResizeOnRefresh\":true},\"superZoomer\":{\"enabled\":false},\"tracking\":{},\"destroySlotsOutOfView\":{\"enabled\":false},\"sticky\":{\"enabled\":true,\"rollUp\":false,\"closeButton\":true,\"hideWhen\":\"[data-is-interscroller],.taboola-feed,vendor-taboola,footer\",\"offsetScrollValue\":1}}},\"in-content\":{\"region\":\"in-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"300x600\",\"300x50\",\"300x250\",\"320x100\",\"320x50\",\"320x480\",\"6x1\",\"fluid\"],\"tablet\":[\"728x90\",\"300x250\",\"800x480\",\"600x480\",\"fluid\"]},\"placement\":{\"body\":{\"interval\":2}},\"deviceOverrides\":{\"mobile\":{\"onlyOn\":\"mobile\"},\"desktop\":{\"onlyOn\":\"desktop\"}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":false},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"stickyScroll\":{\"enabled\":true},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"728x90\",\"300x250\"],\"onlyOn\":\"desktop\",\"subClass\":\"in-post\",\"postType\":\"story\"},\"in-content-1\":{\"region\":\"in-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"300x600\",\"300x50\",\"300x250\",\"320x100\",\"320x50\",\"320x480\",\"6x1\",\"fluid\"],\"tablet\":[\"728x90\",\"300x250\",\"800x480\",\"600x480\",\"fluid\"]},\"placement\":{\"body\":{\"interval\":1}},\"deviceOverrides\":{\"mobile\":{\"onlyOn\":\"mobile\"},\"desktop\":{\"onlyOn\":\"desktop\"}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":false},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"stickyScroll\":{\"enabled\":true},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"728x90\",\"300x250\"],\"onlyOn\":\"desktop\",\"subClass\":\"in-post\",\"postType\":\"story\"},\"in-content-2\":{\"region\":\"in-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"300x600\",\"300x50\",\"300x250\",\"320x100\",\"320x50\",\"320x480\",\"6x1\",\"fluid\"],\"tablet\":[\"728x90\",\"300x250\",\"800x480\",\"600x480\",\"fluid\"]},\"placement\":{\"body\":{\"interval\":2}},\"deviceOverrides\":{\"mobile\":{\"onlyOn\":\"mobile\"},\"desktop\":{\"onlyOn\":\"desktop\"}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":false},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"stickyScroll\":{\"enabled\":true},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"728x90\",\"300x250\"],\"onlyOn\":\"desktop\",\"subClass\":\"in-post\",\"postType\":\"story\"},\"in-content-3\":{\"region\":\"in-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"300x600\",\"300x50\",\"300x250\",\"320x100\",\"320x50\",\"320x480\",\"6x1\",\"fluid\"],\"tablet\":[\"728x90\",\"300x250\",\"800x480\",\"600x480\",\"fluid\"]},\"placement\":{\"body\":{\"interval\":2}},\"deviceOverrides\":{\"mobile\":{\"onlyOn\":\"mobile\"},\"desktop\":{\"onlyOn\":\"desktop\"}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":false},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"stickyScroll\":{\"enabled\":true},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"728x90\",\"300x250\"],\"onlyOn\":\"desktop\",\"subClass\":\"in-post\",\"postType\":\"story\"},\"in-content-4-plus\":{\"region\":\"in-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"300x600\",\"300x50\",\"300x250\",\"320x100\",\"320x50\",\"320x480\",\"6x1\",\"fluid\"],\"tablet\":[\"728x90\",\"300x250\",\"800x480\",\"600x480\",\"fluid\"]},\"placement\":{\"body\":{\"interval\":2}},\"deviceOverrides\":{\"mobile\":{\"onlyOn\":\"mobile\"},\"desktop\":{\"onlyOn\":\"desktop\"}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":false},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"stickyScroll\":{\"enabled\":true},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"728x90\",\"300x250\"],\"onlyOn\":\"desktop\",\"subClass\":\"in-post\",\"postType\":\"story\"},\"native\":{\"region\":\"native\",\"enabled\":true,\"sizes\":{\"phone\":[\"2x2\"]},\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":false,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{}}},\"logo\":{\"region\":\"logo\",\"enabled\":true,\"sizes\":{\"phone\":[\"5x1\",\"fluid\"]},\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":false,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{}}},\"ticker-logo\":{\"region\":\"ticker-logo\",\"enabled\":true,\"sizes\":{\"phone\":[\"5x1\",\"fluid\"]},\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":false,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":false},\"tracking\":{}}},\"after-content\":{\"region\":\"after-content\",\"enabled\":true,\"sizes\":{\"phone\":[\"320x50\",\"320x100\",\"300x250\",\"300x50\"]},\"amazonSizes\":[\"320x50\",\"320x100\",\"300x250\",\"300x50\"],\"onlyOn\":\"mobile\",\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{}}},\"rail\":{\"region\":\"rail\",\"enabled\":true,\"sizes\":{\"tablet\":[\"300x250\"]},\"onlyOn\":\"desktop\",\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"sticky\":{\"enabled\":true,\"stickyAll\":true,\"containerHeightMultipler\":0.8},\"destroySlotsOutOfView\":{\"enabled\":true}}},\"rail-1\":{\"region\":\"rail\",\"enabled\":true,\"sizes\":{\"tablet\":[\"300x250\",\"300x600\"]},\"onlyOn\":\"desktop\",\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":false},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"sticky\":{\"enabled\":true,\"stickyAll\":true,\"containerHeightMultipler\":0.8},\"destroySlotsOutOfView\":{\"enabled\":false}},\"amazonSizes\":[\"300x250\",\"300x600\"],\"force\":1,\"tileOrder\":0},\"rail-2\":{\"region\":\"rail\",\"enabled\":true,\"sizes\":{\"tablet\":[\"300x250\",\"2x2\"]},\"onlyOn\":\"desktop\",\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"sticky\":{\"enabled\":true,\"stickyAll\":true,\"containerHeightMultipler\":0.8},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"300x250\",\"2x2\"],\"tileOrder\":1},\"rail-3\":{\"region\":\"rail\",\"enabled\":true,\"sizes\":{\"tablet\":[\"300x250\",\"2x2\"]},\"onlyOn\":\"desktop\",\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"sticky\":{\"enabled\":true,\"stickyAll\":true,\"containerHeightMultipler\":0.8},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"300x250\"],\"tileOrder\":2},\"rail-4-plus\":{\"region\":\"rail\",\"enabled\":true,\"sizes\":{\"tablet\":[\"300x250\",\"2x2\"]},\"onlyOn\":\"desktop\",\"deviceOverrides\":{\"mobile\":{\"enabled\":false}},\"features\":{\"callout\":{\"enabled\":true,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":true,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{},\"sticky\":{\"enabled\":true,\"stickyAll\":true,\"containerHeightMultipler\":0.8},\"destroySlotsOutOfView\":{\"enabled\":true}},\"amazonSizes\":[\"300x250\",\"2x2\"]},\"button\":{\"region\":\"button\",\"enabled\":true,\"sizes\":{\"phone\":[\"120x60\",\"fluid\"]},\"amazonSizes\":[\"120x60\"],\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":false,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{}}},\"text-link\":{\"region\":\"text-link\",\"enabled\":true,\"sizes\":{\"phone\":[\"fluid\"]},\"features\":{\"callout\":{\"enabled\":false,\"position\":\"above\",\"text\":\"AD\",\"style\":\"site\"},\"collapseIfEmpty\":{\"enabled\":true},\"lazyLoad\":{\"enabled\":true,\"threshold\":\"200%\",\"buffer\":155},\"scrollVelocity\":{\"enabled\":true,\"threshold\":3,\"factor\":3},\"refresh\":{\"enabled\":false,\"interval\":30,\"displayTimer\":false,\"viewablePercentage\":50,\"restrictSizes\":true,\"disabledSlots\":[],\"changeCorrelator\":false},\"superZoomer\":{\"enabled\":true},\"tracking\":{}}}}},\"authEnv\":\"production\",\"fenrirEnv\":\"production\",\"fenrirWebpackPort\":3001,\"version\":\"260205.1514\",\"stripe\":{\"subscriptionResources\":{\"renewal-off-annual\":{\"plansToSubscribeTo\":{\"usd\":{\"annual\":\"f69f772f-a2c8-4768-ad1d-f69784590386\"}}},\"cancellation-annual-upgrade\":{\"usd\":{\"planId\":\"fb7506b9-570f-4b03-ab0b-c0baac1e46b0\",\"currencySymbol\":\"$\",\"renewalPrice\":\"149\",\"offerPrice\":\"49\",\"monthlyPrice\":\"25.95\",\"interval\":\"yearly\"},\"cad\":{\"planId\":\"c12e3e69-0e64-4a8b-81c4-056c9f92dfa4\",\"currencySymbol\":\"C$\",\"renewalPrice\":\"199\",\"offerPrice\":\"59\",\"monthlyPrice\":\"14.95\",\"interval\":\"yearly\"},\"gbp\":{\"planId\":\"810be99a-d57c-4c03-b0b6-ea4b9b5e5f00\",\"currencySymbol\":\"£\",\"renewalPrice\":\"119\",\"offerPrice\":\"39\",\"monthlyPrice\":\"10\",\"interval\":\"yearly\"}},\"annual-early-renewal\":{\"usd\":{\"planId\":\"f88bd81d-f8f2-4972-b3de-c37dbcdb3051\",\"currencySymbol\":\"$\",\"renewalPrice\":\"149\",\"offerPrice\":\"69\"},\"cad\":{\"planId\":\"89f953cf-ebf2-4353-8f74-6c15d4ecf3c9\",\"currencySymbol\":\"C$\",\"renewalPrice\":\"99\",\"offerPrice\":\"69\"},\"gbp\":{\"planId\":\"3120f175-7e06-4ada-b844-5bb26f7c5f53\",\"currencySymbol\":\"£\",\"renewalPrice\":\"79\",\"offerPrice\":\"55\"}},\"annual-switch\":{\"usd\":{\"planId\":\"92ef4403-b84d-421f-abca-a8ec85b9c71d\",\"currencySymbol\":\"$\",\"renewalPrice\":\"149\",\"offerPrice\":\"39\",\"interval\":\"yearly\"},\"cad\":{\"planId\":\"7c0d5e2d-901a-4e42-9194-4219a9686028\",\"currencySymbol\":\"C$\",\"renewalPrice\":\"179\",\"offerPrice\":\"49\",\"interval\":\"yearly\"},\"gbp\":{\"planId\":\"af40180b-4803-4b6b-adab-96b88876e54b\",\"currencySymbol\":\"£\",\"renewalPrice\":\"105\",\"offerPrice\":\"29\",\"interval\":\"yearly\"}},\"annual-switch-limited-offer\":{\"usd\":{\"planId\":\"e370ef9e-d604-4f2a-a6f0-42589158b973\",\"currencySymbol\":\"$\",\"renewalPrice\":\"149\",\"offerPrice\":\"29\",\"interval\":\"yearly\"}},\"preCancellationOffer\":{\"usd\":{\"planId\":\"fb7506b9-570f-4b03-ab0b-c0baac1e46b0\",\"currencySymbol\":\"$\",\"renewalPrice\":\"149\",\"offerPrice\":\"49\",\"monthlyPrice\":\"25.95\",\"interval\":\"yearly\"},\"cad\":{\"planId\":\"c12e3e69-0e64-4a8b-81c4-056c9f92dfa4\",\"currencySymbol\":\"C$\",\"renewalPrice\":\"199\",\"offerPrice\":\"59\",\"monthlyPrice\":\"14.95\",\"interval\":\"yearly\"},\"gbp\":{\"planId\":\"810be99a-d57c-4c03-b0b6-ea4b9b5e5f00\",\"currencySymbol\":\"£\",\"renewalPrice\":\"119\",\"offerPrice\":\"39\",\"monthlyPrice\":\"10\",\"interval\":\"yearly\"}},\"plansNotToShowRetentionOffer\":[]}},\"capiEnv\":\"production\",\"capiV2Env\":\"production\",\"newsletterEnv\":\"production\",\"newsletter\":\"https://account.businessinsider.com/newsletter\",\"apigateway\":{\"domain\":\"https://membership-api.businessinsider.com\",\"apiKey\":\"OGU5ZWUyZWUtNjM2ZS00OTdiLWI0OTUtYTliOGIzMjQ1ODA2\"},\"authentication\":\"https://account.businessinsider.com\",\"forsetiUrl\":\"https://my.businessinsider.com\",\"bifrostEnv\":\"https://bifrost-bfp.pages.dev\",\"tracking\":{\"providerName\":[\"ga\",\"t\",\"comscore\"],\"base_url\":\"//www.businessinsider.com\",\"postTrackingObject\":{\"pageType\":\"post\",\"postID\":\"665e016eb38735ca9ddf012b\",\"postURI\":\"jack-dorsey-fiatjaf-nostr-donation-2024-6\",\"publisher\":\"\",\"editor\":\"Jake",
+      "https://www.businessinsider.de"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "businessinsider",
+      "businessinsider.com",
+      "insider.com",
+      "context",
+      "fiatjaf.",
+      "keyframes"
+    ],
+    "github": [
+      "businessinsider"
+    ],
+    "twitter": [],
+    "linkedin": [
+      "businessinsider"
+    ],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "high",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.669Z",
+    "updatedAt": "2026-02-06T19:33:53.669Z"
+  },
+  {
+    "id": "lead_77a61168",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.forbesindia.com/article/cryptocurrency/former-twitter-ceo-jack-dorsey-gives-nostr-14-btc-in-funding/82161/1",
+    "title": "Former Twitter CEO Jack Dorsey gives Nostr 14 BTC in funding",
+    "description": "The former CEO of Twitter, <strong>Jack Dorsey</strong>, has donated about 14 BTC, worth about $245k, to fund the development of Nostr (stands for Notes and Other Stuff Transmitted by Relays). This comes after Jack published a blog post talking about the need for a native internet protocol for social media.",
+    "emails": [
+      "Samidha.Jain@nw18.com",
+      "dummy@2in.com",
+      "samar.srivastava@nw18.com",
+      "himani.kothari@nw18.com",
+      "Siddhant.Konduskar@nw18.com",
+      "shashank@ymedia.io"
+    ],
+    "phones": [],
+    "websites": [
+      "https://hbopenbid.pubmatic.com",
+      "https://tpc.googlesyndication.com",
+      "https://www.googletagservices.com",
+      "https://adservice.google.co.in",
+      "https://pagead2.googlesyndication.com"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "forbesindia",
+      "context",
+      "keyframes",
+      "bhardwajshash",
+      "nw18.com",
+      "nw18.com.",
+      "ymedia.io"
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [
+      "forbes-india"
+    ],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "high",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.671Z",
+    "updatedAt": "2026-02-06T19:33:53.671Z"
+  },
+  {
+    "id": "lead_6456f63d",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://dri.es/nostr-love-at-first-sight",
+    "title": "Nostr, love at first sight | Dries Buytaert",
+    "description": "Nostr has been around a few years, but in December 2022, <strong>Jack Dorsey</strong>, the co-founder and former CEO of Twitter, announced that he had made a donation of 14 bitcoins, valued at approximately $250,000.",
+    "emails": [
+      "dries@buytaert.net"
+    ],
+    "phones": [],
+    "websites": [
+      "https://www.drupal.org",
+      "https://creativecommons.org/licenses/by/4.0/\",",
+      "https://creativecommons.org/licenses/by-nc/4.0/\"",
+      "https://en.wikipedia.org/wiki/Jack_Dorsey\">Jack"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "dries",
+      "buytaert.net",
+      "context"
+    ],
+    "github": [
+      "nostr-protocol",
+      "jesterui",
+      "aljazceru",
+      "damus-io"
+    ],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "high",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.673Z",
+    "updatedAt": "2026-02-06T19:33:53.673Z"
+  },
+  {
+    "id": "lead_64883e4d",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://en.wikipedia.org/wiki/Nostr",
+    "title": "Nostr - Wikipedia",
+    "description": "Nostr is primarily popular with cryptocurrency users, primarily Bitcoin users. <strong>Jack Dorsey</strong>, the co-founder of Twitter, has endorsed and financially supported the development of Nostr by donating approximately $250,000 worth of Bitcoin to the developers of the project in 2023, as well as a $10 ...",
+    "emails": [],
+    "phones": [],
+    "websites": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/ff/Nostr_logo.png\">",
+      "https://creativecommons.org/licenses/by-sa/4.0/deed.en\">",
+      "https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en\"",
+      "https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en\"><span>Donate</span></a></li><li",
+      "https://ar.wikipedia.org/wiki/%D9%86%D9%88%D8%B3%D8%AA%D8%B1\"",
+      "https://de.wikipedia.org/wiki/Nostr\"",
+      "https://es.wikipedia.org/wiki/Nostr\"",
+      "https://fa.wikipedia.org/wiki/%D9%86%D8%A7%D8%B3%D8%AA%D8%B1\"",
+      "https://fr.wikipedia.org/wiki/Nostr\"",
+      "https://gl.wikipedia.org/wiki/Nostr\""
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "fiatjaf",
+      "context"
+    ],
+    "github": [
+      "nostr-protocol"
+    ],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "medium",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.676Z",
+    "updatedAt": "2026-02-06T19:33:53.676Z"
+  },
+  {
+    "id": "lead_fc94c327",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://nostr.com/nevent1qqsxsy8uathnm4g6usezytxa08ykskc492r7tejt0xj4yt43xexk6tszypd949mw5uq4awk3cuyzqugcmrc6a8yxsqljmcrejcu0d9yre4cn2kyhze4",
+    "title": "From Airline Cockpit to Startup Success & Bitcoin Excited to share the latest episode ...",
+    "description": "From Airline Cockpit to Startup Success &amp; Bitcoin Excited to share the latest episode of the Digital Nomad Podcast, where I sat down with @<strong>Jordi Llonch Esteve</strong> - Airline pilot, - Startup founder - Mentor and passionate advocate for freedo",
+    "emails": [],
+    "phones": [],
+    "websites": [
+      "https://cdn.satlantis.io/0126f546-f2c0-49ab-bef8-6c5347d8c305-92C17497-DA99-40DF-B013-4A6143B3E836.mp4\"><meta",
+      "https://njump.me/nevent1qqsxsy8uathnm4g6usezytxa08ykskc492r7tejt0xj4yt43xexk6tszypd949mw5uq4awk3cuyzqugcmrc6a8yxsqljmcrejcu0d9yre4cn2kyhze4\"><script",
+      "https://blossom.primal.net/c565e728124625c1a656688bf4672b4680cb24f1cb02891d7e712817934f43a9.jpg\"></div><div",
+      "https://cdn.satlantis.io/0126f546-f2c0-49ab-bef8-6c5347d8c305-92C17497-DA99-40DF-B013-4A6143B3E836.mp4\"></video></div></article><div",
+      "https://cdn.satlantis.io/0126f546-f2c0-49ab-bef8-6c5347d8c305-92C17497-DA99-40DF-B013-4A6143B3E836.mp4&#34;</span>,",
+      "https://coracle.social/nevent1qqsxsy8uathnm4g6usezytxa08ykskc492r7tejt0xj4yt43xexk6tspp4mhxue69uhkummn9ekx7mqzypd949mw5uq4awk3cuyzqugcmrc6a8yxsqljmcrejcu0d9yre4cn2k4lskx\"><span",
+      "https://jumble.social/nevent1qqsxsy8uathnm4g6usezytxa08ykskc492r7tejt0xj4yt43xexk6tspp4mhxue69uhkummn9ekx7mqzypd949mw5uq4awk3cuyzqugcmrc6a8yxsqljmcrejcu0d9yre4cn2k4lskx\"><span",
+      "https://lumilumi.app/nevent1qqsxsy8uathnm4g6usezytxa08ykskc492r7tejt0xj4yt43xexk6tspp4mhxue69uhkummn9ekx7mqzypd949mw5uq4awk3cuyzqugcmrc6a8yxsqljmcrejcu0d9yre4cn2k4lskx\"><span"
+    ],
+    "whatsapp": [],
+    "instagram": [],
+    "github": [
+      "nostr-protocol",
+      "fiatjaf"
+    ],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "medium",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.678Z",
+    "updatedAt": "2026-02-06T19:33:53.678Z"
+  },
+  {
+    "id": "lead_3f5e90b7",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://indianexpress.com/article/technology/tech-news-technology/nostr-decentralised-social-network-what-is-it-and-how-to-sign-up-8339039/",
+    "title": "A closer look at Nostr, the new decentralised Twitter alternative | Technology News - The Indian Express",
+    "description": "After Mastodon, Nostr is being hailed as the next big alternative to Twitter. In fact, it recently got the attention of Twitter founder Jack Dorsey who donated several Bitcoins to the cause. But what exactly is it and how does it work?",
+    "emails": [],
+    "phones": [],
+    "websites": [
+      "https://ogp.me/ns#\"",
+      "https://ogp.me/ns/fb#\">",
+      "https://indexpress.page.link/shareDL\"",
+      "https://www.googletagservices.com/\"",
+      "https://ads.pubmatic.com/\"><link",
+      "https://tpc.googlesyndication.com/\"><link"
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "indianexpress",
+      "context",
+      "indianexpress.com",
+      "expressindia.com",
+      "charset",
+      "keyframes",
+      "screendigital"
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [
+      "indian-express"
+    ],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "medium",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.681Z",
+    "updatedAt": "2026-02-06T19:33:53.681Z"
+  },
+  {
+    "id": "lead_e8c19f9c",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.linkedin.com/posts/delcastillo1_meet-fiatjaf-the-mysterious-nostr-creator-activity-7069282875946225664-gUhs",
+    "title": "Michael del Castillo on LinkedIn: Meet @Fiatjaf, The Mysterious Nostr Creator Who Has Lured 18 Million Users…",
+    "description": "What is NOSTR? &#x27;Notes and Other Stuff Transmitted by Relay&#x27;. A groundbreaking protocol reshaping social media by enabling users to monetise their content. NOSTR was developed here at <strong>ZEBEDEE by our very own fiatjaf</strong>. ZEBEDEE continues to lead, shape and innovate in payments and gaming.",
+    "emails": [],
+    "phones": [],
+    "websites": [
+      "https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca\">",
+      "https://lnkd.in/eHYhYJGN\">",
+      "https://media.licdn.com/dms/image/sync/v2/D4D27AQFF38ohIc6oBA/articleshare-shrink_800/articleshare-shrink_800/0/1711855016738?e=2147483647&amp;v=beta&amp;t=rywtu7Hwl1rFdjpa3maVYVyyK7wRxQ-3Vtu42HAnmz0\">",
+      "https://static.licdn.com/aero-v1/sc/h/9wqbrm006gv3ax2sdncki8yuy\">",
+      "https://www.2buts.com/p/twitter\",\"author\":{\"@type\":\"Person\",\"name\":\"John",
+      "https://media.licdn.com/dms/image/sync/v2/D4D27AQFF38ohIc6oBA/articleshare-shrink_800/articleshare-shrink_800/0/1711855016738?e=2147483647&v=beta&t=rywtu7Hwl1rFdjpa3maVYVyyK7wRxQ-3Vtu42HAnmz0\",\"@type\":\"ImageObject\"},\"articleBody\":\"Who",
+      "https://lnkd.in/eHYhYJGN\",\"author\":{\"name\":\"Michael",
+      "https://media.licdn.com/dms/image/v2/D4E03AQFD5pQpFfGpEQ/profile-displayphoto-scale_200_200/B4EZo2iMGBKgAc-/0/1761851525031?e=2147483647&v=beta&t=93pCuLPo7zDyiTgSn9pG7S8gH_Hzk2xyZj6hzazWhbI\",\"@type\":\"ImageObject\"},\"url\":\"https://www.linkedin.com/in/delcastillo1\",\"@type\":\"Person\",\"interactionStatistic\":{\"@type\":\"InteractionCounter\",\"interactionType\":\"http://schema.org/FollowAction\",\"userInteractionCount\":18746}},\"interactionStatistic\":[{\"@type\":\"InteractionCounter\",\"interactionType\":\"http://schema.org/LikeAction\",\"userInteractionCount\":21},{\"@type\":\"InteractionCounter\",\"interactionType\":\"https://schema.org/CommentAction\",\"userInteractionCount\":2}],\"hasPart\":{\"@type\":\"WebPageElement\",\"isAccessibleForFree\":false,\"cssSelector\":\".details\"}}",
+      "https://static.licdn.com/aero-v1/sc/h/ddi43qwelxeqjxdd45pe3fvs1\"",
+      "https://static.licdn.com/aero-v1/sc/h/29rdkxlvag0d3cpj96fiilbju\""
+    ],
+    "whatsapp": [],
+    "instagram": [
+      "fiatjaf",
+      "context"
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [
+      "johnwolpert"
+    ],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "medium",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.683Z",
+    "updatedAt": "2026-02-06T19:33:53.683Z"
+  },
+  {
+    "id": "lead_8b1d190d",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.forbes.com/sites/digital-assets/2023/05/30/bitcoin-social-network-nostr-creator-fiatjaf-/",
+    "title": "Meet @Fiatjaf, The Mysterious Nostr Creator Who Has Lured 18 Million Users And $5 Million From Jack Dorsey",
+    "description": "“A lot of the things people wanted to see built on bitcoin,” says Arc, “actually could just be built on Nostr.” · A month after @Fiatjaf published his manifesto—completely separately—Dorsey, then Twitter’s CEO, proposed Bluesky with similar goals. By early 2020, @Fiatjaf had got the attention of his current part-time employer, Zebedee, a Hoboken, New Jersey, video game startup building software that lets game developers give players bitcoin rewards. After much pleading on behalf of Zebedee co-founder Andre Neves, 31, he convinced @Fiatjaf to take a full-time remote job, putting him in charge of an internal project called NBD.WTF, now housing five open-source projects related to bitcoin, and Nostr.",
+    "emails": [],
+    "phones": [],
+    "websites": [],
+    "whatsapp": [],
+    "instagram": [
+      "fiatjaf"
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "low",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.685Z",
+    "updatedAt": "2026-02-06T19:33:53.685Z"
+  },
+  {
+    "id": "lead_eb1277c9",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.freethink.com/internet/nostr",
+    "title": "What is Nostr, the Jack Dorsey-backed social network?",
+    "description": "Nostr is unlike any traditional social network you’re familiar with. It’s not even a social network. In December 2022, Twitter co-founder and former CEO, Dorsey tweeted that he had donated 14 bitcoins — a little over a quarter million dollars — to the anonymous founder of Nostr, who goes by the pseudonym @fiatjaf.",
+    "emails": [],
+    "phones": [],
+    "websites": [],
+    "whatsapp": [],
+    "instagram": [
+      "fiatjaf."
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "low",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.688Z",
+    "updatedAt": "2026-02-06T19:33:53.688Z"
+  },
+  {
+    "id": "lead_01a20cc5",
+    "queryId": "query_f6d91833",
+    "projectId": "proj_001",
+    "url": "https://www.binance.com/en/square/post/6393775325594",
+    "title": "Nostr founder calls Lightning Network a scam, what happened to Lightning Network? | Techub News on Binance Square",
+    "description": "Written by Jaleel, BlockBeats &quot;Lightning Network is a scam,&quot; said Nostr founder Fiatjaf (@fiatjaf) in a screenshot shared by Blockchair lead developer Nikita. In the comments, another user agreed",
+    "emails": [],
+    "phones": [],
+    "websites": [],
+    "whatsapp": [],
+    "instagram": [
+      "fiatjaf"
+    ],
+    "github": [],
+    "twitter": [],
+    "linkedin": [],
+    "telegram": [],
+    "discord": [],
+    "source": "brave",
+    "sources": [
+      "brave"
+    ],
+    "quality": "low",
+    "tags": [
+      "brave-search"
+    ],
+    "status": "new",
+    "createdAt": "2026-02-06T19:33:53.690Z",
+    "updatedAt": "2026-02-06T19:33:53.690Z"
+  }
+]

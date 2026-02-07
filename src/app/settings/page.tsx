@@ -31,7 +31,7 @@ export default function SettingsPage() {
     <div className="p-8">
       <header className="mb-8">
         <h1 className="text-3xl font-bold text-white">Settings</h1>
-        <p className="text-slate-400 mt-1">Configure your Nostr Scout instance</p>
+        <p className="text-slate-400 mt-1">Configure your Scout instance</p>
       </header>
 
       <div className="max-w-2xl space-y-6">
@@ -91,7 +91,7 @@ export default function SettingsPage() {
           <div className="space-y-3 text-sm">
             <div className="flex justify-between">
               <span className="text-slate-400">Application</span>
-              <span className="text-white">Nostr Scout</span>
+              <span className="text-white">Scout</span>
             </div>
             <div className="flex justify-between">
               <span className="text-slate-400">Version</span>

@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "id": "query_6ab20046",
+    "projectId": "proj_001",
+    "searchTerm": "nostr relay projects",
+    "status": "completed",
+    "resultCount": 20,
+    "createdAt": "2026-02-06T19:11:43.019Z",
+    "updatedAt": "2026-02-06T19:11:55.652Z",
+    "lastRun": "2026-02-06T19:11:55.651Z"
+  },
+  {
+    "id": "query_cac617e8",
+    "projectId": "proj_001",
+    "searchTerm": "nostr projects",
+    "status": "completed",
+    "resultCount": 20,
+    "createdAt": "2026-02-06T19:12:51.835Z",
+    "updatedAt": "2026-02-06T19:13:07.282Z",
+    "lastRun": "2026-02-06T19:13:07.281Z"
+  },
+  {
+    "id": "query_57f6936d",
+    "projectId": "proj_001",
+    "searchTerm": "nostr ecosystem",
+    "status": "completed",
+    "resultCount": 18,
+    "createdAt": "2026-02-06T19:12:56.253Z",
+    "updatedAt": "2026-02-06T19:13:38.483Z",
+    "lastRun": "2026-02-06T19:13:38.483Z"
+  },
+  {
+    "id": "query_f6d91833",
+    "projectId": "proj_001",
+    "searchTerm": "nostr startup founders",
+    "targets": [
+      "emails",
+      "websites",
+      "instagram",
+      "github",
+      "whatsapp",
+      "linkedin"
+    ],
+    "sources": [
+      "all"
+    ],
+    "status": "completed",
+    "resultCount": 18,
+    "createdAt": "2026-02-06T19:33:44.785Z",
+    "updatedAt": "2026-02-06T19:33:53.691Z",
+    "lastRun": "2026-02-06T19:33:53.691Z"
+  }
+]

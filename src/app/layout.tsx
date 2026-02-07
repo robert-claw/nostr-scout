@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Nostr Scout - Lead Discovery',
+  title: 'Scout - Lead Discovery',
   description: 'Discover and manage leads from Nostr-related projects',
 };
 

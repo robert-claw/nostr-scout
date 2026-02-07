@@ -2,10 +2,34 @@
 
 import { useState, useEffect, use } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Plus, Search, Play, Loader2, Trash2, CheckCircle2, XCircle, Clock, RefreshCw } from 'lucide-react';
+import { 
+  ArrowLeft, Plus, Search, Play, Loader2, Trash2, CheckCircle2, 
+  XCircle, Clock, RefreshCw, Mail, Phone, Globe, MessageCircle,
+  Instagram, Github, Twitter, Linkedin, Send, MessageSquare
+} from 'lucide-react';
 import Link from 'next/link';
 import { useToast } from '@/components/ui/Toast';
-import type { Project, Query, Lead } from '@/lib/types';
+import type { Project, Query, Lead, SearchTarget, SearchSource } from '@/lib/types';
+import { ALL_TARGETS, TARGET_CONFIG } from '@/lib/types';
+
+const SEARCH_SOURCES: { id: SearchSource; name: string; description: string }[] = [
+  { id: 'brave', name: 'Brave Search', description: 'Web search + page crawling' },
+  { id: 'perplexity', name: 'Perplexity AI', description: 'AI-powered research' },
+  { id: 'all', name: 'All Sources', description: 'Search everywhere' },
+];
+
+const TARGET_ICONS: Record<SearchTarget, React.ReactNode> = {
+  emails: <Mail className="h-4 w-4" />,
+  phones: <Phone className="h-4 w-4" />,
+  websites: <Globe className="h-4 w-4" />,
+  whatsapp: <MessageCircle className="h-4 w-4" />,
+  instagram: <Instagram className="h-4 w-4" />,
+  github: <Github className="h-4 w-4" />,
+  twitter: <Twitter className="h-4 w-4" />,
+  linkedin: <Linkedin className="h-4 w-4" />,
+  telegram: <Send className="h-4 w-4" />,
+  discord: <MessageSquare className="h-4 w-4" />,
+};
 
 export default function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -15,6 +39,10 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [newSearch, setNewSearch] = useState('');
+  const [improvedQuery, setImprovedQuery] = useState<string | null>(null);
+  const [improving, setImproving] = useState(false);
+  const [selectedTargets, setSelectedTargets] = useState<SearchTarget[]>(['emails']);
+  const [selectedSources, setSelectedSources] = useState<SearchSource[]>(['all']);
   const [creating, setCreating] = useState(false);
   const [runningQuery, setRunningQuery] = useState<string | null>(null);
   const { showToast } = useToast();
@@ -45,15 +73,70 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
     }
   }
 
-  async function createQuery() {
+  function toggleTarget(target: SearchTarget) {
+    setSelectedTargets(prev => 
+      prev.includes(target) 
+        ? prev.filter(t => t !== target)
+        : [...prev, target]
+    );
+  }
+
+  function toggleSource(source: SearchSource) {
+    if (source === 'all') {
+      setSelectedSources(['all']);
+    } else {
+      setSelectedSources(prev => {
+        const filtered = prev.filter(s => s !== 'all');
+        if (filtered.includes(source)) {
+          return filtered.filter(s => s !== source);
+        }
+        return [...filtered, source];
+      });
+    }
+  }
+
+  async function handleImproveQuery() {
     if (!newSearch.trim()) return;
+    setImproving(true);
+    try {
+      const res = await fetch('/api/queries/improve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query: newSearch,
+          projectId: id,
+          targets: selectedTargets,
+        }),
+      });
+      const data = await res.json();
+      if (data.success && data.data.improved !== newSearch) {
+        setImprovedQuery(data.data.improved);
+        showToast('Query improved', 'success');
+      } else {
+        showToast('Query looks good as is', 'info');
+      }
+    } catch {
+      showToast('Failed to improve query', 'error');
+    } finally {
+      setImproving(false);
+    }
+  }
+
+  async function createQuery() {
+    if (!newSearch.trim() || selectedTargets.length === 0 || selectedSources.length === 0) return;
     
     setCreating(true);
     try {
       const res = await fetch('/api/queries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ projectId: id, searchTerm: newSearch }),
+        body: JSON.stringify({ 
+          projectId: id, 
+          searchTerm: newSearch,
+          improvedQuery: improvedQuery || undefined,
+          targets: selectedTargets,
+          sources: selectedSources,
+        }),
       });
       
       const data = await res.json();
@@ -61,6 +144,9 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
         setQueries(prev => [...prev, data.data]);
         setShowModal(false);
         setNewSearch('');
+        setImprovedQuery(null);
+        setSelectedTargets(['emails']);
+        setSelectedSources(['all']);
         showToast('Query created', 'success');
       } else {
         showToast(data.error || 'Failed to create query', 'error');
@@ -79,13 +165,11 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
       const data = await res.json();
       
       if (data.success) {
-        // Update query in list
         setQueries(prev => prev.map(q => q.id === queryId ? data.data.query : q));
-        // Reload leads
         const leadsRes = await fetch(`/api/leads?projectId=${id}`);
         const leadsData = await leadsRes.json();
         setLeads(leadsData.data || []);
-        showToast(`Found ${data.data.leadsCreated} leads with emails`, 'success');
+        showToast(`Found ${data.data.leadsCreated} leads with contact info`, 'success');
       } else {
         showToast(data.error || 'Search failed', 'error');
       }
@@ -121,6 +205,15 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
       case 'running': return <Loader2 className="h-4 w-4 text-cyan-400 animate-spin" />;
       default: return <Clock className="h-4 w-4 text-slate-400" />;
     }
+  };
+
+  // Count total contacts
+  const countContacts = (lead: Lead) => {
+    return (lead.emails?.length || 0) + (lead.phones?.length || 0) + 
+           (lead.whatsapp?.length || 0) + (lead.instagram?.length || 0) +
+           (lead.github?.length || 0) + (lead.twitter?.length || 0) +
+           (lead.linkedin?.length || 0) + (lead.telegram?.length || 0) +
+           (lead.discord?.length || 0) + (lead.websites?.length || 0);
   };
 
   if (loading) {
@@ -206,6 +299,11 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                         {query.lastRun && (
                           <span>Last run: {new Date(query.lastRun).toLocaleString()}</span>
                         )}
+                        {query.targets && (
+                          <span className="flex items-center gap-1">
+                            Looking for: {query.targets.map(t => TARGET_CONFIG[t]?.label || t).join(', ')}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -260,7 +358,7 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
               <thead>
                 <tr className="border-b border-slate-800">
                   <th className="text-left p-4 text-sm font-medium text-slate-400">Title</th>
-                  <th className="text-left p-4 text-sm font-medium text-slate-400">Emails</th>
+                  <th className="text-left p-4 text-sm font-medium text-slate-400">Contacts</th>
                   <th className="text-left p-4 text-sm font-medium text-slate-400">Status</th>
                 </tr>
               </thead>
@@ -269,18 +367,38 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                   <tr key={lead.id} className="border-b border-slate-800 last:border-0">
                     <td className="p-4">
                       <a href={lead.url} target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-400 transition-colors">
-                        {lead.title.length > 60 ? lead.title.slice(0, 60) + '...' : lead.title}
+                        {lead.title.length > 50 ? lead.title.slice(0, 50) + '...' : lead.title}
                       </a>
                     </td>
                     <td className="p-4">
                       <div className="flex flex-wrap gap-1">
-                        {lead.emails.slice(0, 2).map(email => (
-                          <span key={email} className="text-xs bg-slate-800 text-cyan-400 px-2 py-1 rounded">
-                            {email}
+                        {lead.emails?.length > 0 && (
+                          <span className="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded flex items-center gap-1">
+                            <Mail className="h-3 w-3" /> {lead.emails.length}
                           </span>
-                        ))}
-                        {lead.emails.length > 2 && (
-                          <span className="text-xs text-slate-500">+{lead.emails.length - 2}</span>
+                        )}
+                        {lead.phones?.length > 0 && (
+                          <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded flex items-center gap-1">
+                            <Phone className="h-3 w-3" /> {lead.phones.length}
+                          </span>
+                        )}
+                        {lead.whatsapp?.length > 0 && (
+                          <span className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded flex items-center gap-1">
+                            <MessageCircle className="h-3 w-3" /> {lead.whatsapp.length}
+                          </span>
+                        )}
+                        {lead.instagram?.length > 0 && (
+                          <span className="text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded flex items-center gap-1">
+                            <Instagram className="h-3 w-3" /> {lead.instagram.length}
+                          </span>
+                        )}
+                        {lead.github?.length > 0 && (
+                          <span className="text-xs bg-slate-500/20 text-slate-300 px-2 py-1 rounded flex items-center gap-1">
+                            <Github className="h-3 w-3" /> {lead.github.length}
+                          </span>
+                        )}
+                        {countContacts(lead) === 0 && (
+                          <span className="text-xs text-slate-500">No contacts</span>
                         )}
                       </div>
                     </td>
@@ -316,28 +434,104 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6 w-full max-w-md mx-4"
+              className="bg-slate-900 border border-slate-800 rounded-xl p-6 w-full max-w-lg mx-4"
               onClick={e => e.stopPropagation()}
             >
               <h2 className="text-xl font-semibold text-white mb-4">Add Search Query</h2>
               
-              <div>
-                <label className="block text-sm font-medium text-slate-300 mb-1">Search Term</label>
-                <input
-                  type="text"
-                  value={newSearch}
-                  onChange={e => setNewSearch(e.target.value)}
-                  placeholder='e.g. "nostr relay" contact email'
-                  className="w-full px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none"
-                  autoFocus
-                  onKeyDown={e => e.key === 'Enter' && createQuery()}
-                />
-                <p className="text-xs text-slate-500 mt-2">
-                  Tip: Include terms like &ldquo;contact&rdquo;, &ldquo;email&rdquo;, or &ldquo;@&rdquo; to find pages with email addresses
-                </p>
+              <div className="space-y-4 max-h-[60vh] overflow-y-auto pr-2">
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-1">Search Term</label>
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      value={newSearch}
+                      onChange={e => { setNewSearch(e.target.value); setImprovedQuery(null); }}
+                      placeholder='e.g. "AI startup" founders contact'
+                      className="flex-1 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none"
+                      autoFocus
+                    />
+                    <button
+                      onClick={handleImproveQuery}
+                      disabled={!newSearch.trim() || improving}
+                      className="px-3 py-2 bg-purple-600 hover:bg-purple-500 disabled:bg-slate-700 disabled:text-slate-500 text-white text-sm rounded-lg transition-colors flex items-center gap-1"
+                      title="Improve query with AI"
+                    >
+                      {improving ? <Loader2 className="h-4 w-4 animate-spin" /> : '✨'}
+                      Improve
+                    </button>
+                  </div>
+                  {improvedQuery && (
+                    <div className="mt-2 p-3 bg-purple-500/10 border border-purple-500/30 rounded-lg">
+                      <div className="flex items-start justify-between gap-2">
+                        <div>
+                          <p className="text-xs text-purple-400 mb-1">Improved query:</p>
+                          <p className="text-sm text-white">{improvedQuery}</p>
+                        </div>
+                        <button
+                          onClick={() => { setNewSearch(improvedQuery); setImprovedQuery(null); }}
+                          className="text-xs text-purple-400 hover:text-purple-300 whitespace-nowrap"
+                        >
+                          Use this
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                  <p className="text-xs text-slate-500 mt-2">
+                    Tip: Click &ldquo;Improve&rdquo; to enhance your query with AI
+                  </p>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">Search Sources</label>
+                  <div className="grid grid-cols-3 gap-2">
+                    {SEARCH_SOURCES.map(source => {
+                      const isSelected = selectedSources.includes(source.id);
+                      return (
+                        <button
+                          key={source.id}
+                          onClick={() => toggleSource(source.id)}
+                          className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg text-sm transition-colors ${
+                            isSelected
+                              ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50'
+                              : 'bg-slate-800 text-slate-400 border border-slate-700 hover:border-slate-600'
+                          }`}
+                        >
+                          <span className="font-medium">{source.name}</span>
+                          <span className="text-xs opacity-70">{source.description}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">What to Look For</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {ALL_TARGETS.map(target => {
+                      const config = TARGET_CONFIG[target];
+                      const isSelected = selectedTargets.includes(target);
+                      return (
+                        <button
+                          key={target}
+                          onClick={() => toggleTarget(target)}
+                          className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                            isSelected
+                              ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50'
+                              : 'bg-slate-800 text-slate-400 border border-slate-700 hover:border-slate-600'
+                          }`}
+                        >
+                          {TARGET_ICONS[target]}
+                          <span>{config.label}</span>
+                          {isSelected && <CheckCircle2 className="h-3.5 w-3.5 ml-auto" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
 
-              <div className="flex justify-end gap-3 mt-6">
+              <div className="flex justify-end gap-3 mt-6 pt-4 border-t border-slate-800">
                 <button
                   onClick={() => setShowModal(false)}
                   className="px-4 py-2 text-slate-300 hover:text-white transition-colors"
@@ -346,11 +540,11 @@ export default function ProjectDetailPage({ params }: { params: Promise<{ id: st
                 </button>
                 <button
                   onClick={createQuery}
-                  disabled={!newSearch.trim() || creating}
+                  disabled={!newSearch.trim() || selectedTargets.length === 0 || selectedSources.length === 0 || creating}
                   className="flex items-center gap-2 px-4 py-2 bg-cyan-600 hover:bg-cyan-500 disabled:bg-slate-700 disabled:text-slate-500 text-white rounded-lg transition-colors"
                 >
                   {creating && <Loader2 className="h-4 w-4 animate-spin" />}
-                  Create
+                  Create Query
                 </button>
               </div>
             </motion.div>

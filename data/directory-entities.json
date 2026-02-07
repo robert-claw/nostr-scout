@@ -1,0 +1,595 @@
+{
+  "entities": [
+    {
+      "id": "1770407893982-0",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Fiatjaf",
+      "description": "Fiatjaf is a Brazilian software developer born in 1991, known as the founder of the decentralized social protocol Nostr launched in 2020. He works remotely for Zebedee, overseeing Bitcoin-related projects including Nostr, and has received funding from Jack Dorsey.[1][2][3][4]",
+      "title": "Founder",
+      "role": "Creator and lead developer of Nostr",
+      "twitter": "Fiatjaf",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "developer",
+        "cryptocurrency",
+        "enriched",
+        "github:fiatjaf"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:03:42.981Z"
+    },
+    {
+      "id": "1770407893982-1",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Giovanni Torres Parra",
+      "description": "Giovanni Torres Parra is a Brazilian software developer known as the anonymous leader of the Nostr protocol, who received a $10M donation from Jack Dorsey in 2024. He has created websites promoting the work of Olavo de Carvalho and operates a hostel in southeastern Brazil.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "identity",
+        "enriched",
+        "github:fiatjaf"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:03:35.934Z",
+      "twitter": "fiatjaf"
+    },
+    {
+      "id": "1770407893982-2",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Martti Malmi",
+      "description": "Finnish computer scientist and one of the earliest Bitcoin developers who contributed to Bitcoin's source code alongside Satoshi Nakamoto starting in 2009. Currently involved with cryptocurrency and blockchain projects including Gun and other decentralized initiatives.",
+      "title": "Developer",
+      "role": "Nostr contributor",
+      "twitter": "MartiMalmi",
+      "source": "perplexity",
+      "tags": [
+        "Bitcoin",
+        "Nostr",
+        "developer",
+        "enriched"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:03:37.972Z"
+    },
+    {
+      "id": "1770407893982-3",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Miljan Braticevic",
+      "description": "Founder & CEO of Primal, a decentralized social media platform built on the Nostr protocol that combines Bitcoin integration with censorship-resistant communication.",
+      "title": "Founder & CEO",
+      "role": "Primal creator",
+      "company": "Primal",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "app developer",
+        "enriched",
+        "phone:888-776-0942",
+        "funding:$1M seed round led by Ten31 with participation from Hivemind"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:03:40.869Z",
+      "website": "primal.net",
+      "founded": 2023
+    },
+    {
+      "id": "1770407893982-4",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Jack Dorsey",
+      "description": "Jack Dorsey is an American businessman, co-founder of Twitter (now X), where he served as CEO from 2007–2008 and 2015–2021, and co-founder, chairman, and Block Head of Block, Inc. (formerly Square).[1][4]",
+      "title": "Co-founder of Twitter",
+      "role": "Major funder of Nostr",
+      "source": "perplexity",
+      "tags": [
+        "donor",
+        "Bitcoin",
+        "Nostr",
+        "enriched"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:04:00.929Z",
+      "website": "https://investors.block.xyz/governance/board-of-directors/person-details/default.aspx?ItemId=ad56d8c9-6b3e-4c89-8323-d3d260a5b423",
+      "twitter": "jack"
+    },
+    {
+      "id": "1770407893982-5",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "product",
+      "name": "Nostr",
+      "description": "Decentralized social media protocol (Notes and Other Stuff Transmitted by Relays) created in 2020, emphasizing user data ownership and censorship resistance.",
+      "founded": "2020",
+      "source": "perplexity",
+      "tags": [
+        "protocol",
+        "decentralized social",
+        "open source"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-6",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "product",
+      "name": "Primal",
+      "description": "Social application built on the Nostr protocol, founded by Miljan Braticevic to offer intuitive decentralized social networking.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr client",
+        "social app"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-7",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "product",
+      "name": "Iris",
+      "description": "Social media app integrating Nostr, developed with contributions from early Bitcoin developer Martti Malmi.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr client",
+        "social app"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-8",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "product",
+      "name": "Damus",
+      "description": "Popular iOS app for Nostr developed by William Casarin, highlighting open protocol interoperability.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr client",
+        "iOS app"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-9",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "product",
+      "name": "Amethyst",
+      "description": "Open-source Nostr client created by Vitor Pamplona, empowering creators through decentralized, censorship-resistant social media.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr client",
+        "Android"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-10",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "organization",
+      "name": "Open Sats Initiative",
+      "description": "Nonprofit supporting Bitcoin-related projects including Nostr; received $10 million donation from Jack Dorsey for Nostr development.",
+      "industry": "Cryptocurrency",
+      "source": "perplexity",
+      "tags": [
+        "nonprofit",
+        "funding",
+        "Bitcoin"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-11",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "William Casarin",
+      "description": "Developer behind Damus, a popular Nostr iOS app, who switched from Mastodon due to censorship issues.",
+      "title": "Developer",
+      "role": "Damus creator",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "developer"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-12",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Vitor Pamplona",
+      "description": "Creator of Amethyst, an open-source Nostr client focused on decentralized social media.",
+      "title": "Creator",
+      "role": "Amethyst developer",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "developer"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-13",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Ben Arc",
+      "description": "Welsh software developer who collaborated with Fiatjaf starting in 2019, contributing to Nostr's development inspired by Bitcoin marketplaces.",
+      "source": "perplexity",
+      "tags": [
+        "Nostr",
+        "collaborator"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T19:58:21.082Z"
+    },
+    {
+      "id": "1770407893982-14",
+      "projectId": "proj_001",
+      "queryId": "1770407893982",
+      "type": "person",
+      "name": "Edward Snowden",
+      "description": "Edward Snowden is the American whistleblower who revealed global mass surveillance programs in 2013 and is the author of the international bestseller Permanent Record. He currently serves as president of the board of directors of the Freedom of the Press Foundation.[4]",
+      "role": "Prominent user",
+      "source": "perplexity",
+      "tags": [
+        "privacy",
+        "Nostr user",
+        "enriched"
+      ],
+      "createdAt": "2026-02-06T19:58:21.082Z",
+      "updatedAt": "2026-02-06T20:04:22.598Z",
+      "website": "edwardsnowden.substack.com",
+      "twitter": "Snowden"
+    },
+    {
+      "id": "1770408016081-0",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "fiatjaf",
+      "description": "Pseudonymous lead developer of the Nostr protocol, frustrated by Twitter's censorship, who began developing Nostr for decentralized identity and social networking. Works remotely for Zebedee overseeing NBD.WTF projects including Nostr.",
+      "title": "Nostr Developer",
+      "company": "Zebedee",
+      "industry": "Cryptocurrency, Decentralized Social",
+      "twitter": "fiatjaf",
+      "source": "perplexity",
+      "tags": [
+        "nostr",
+        "developer",
+        "bitcoin"
+      ],
+      "createdAt": "2026-02-06T20:00:25.789Z",
+      "updatedAt": "2026-02-06T20:00:25.789Z"
+    },
+    {
+      "id": "1770408016081-1",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Ben Arc",
+      "description": "Welsh software developer who collaborated with fiatjaf starting in 2019 on Bitcoin-related projects, contributing ideas to Nostr's development for marketplaces and decentralized networks.",
+      "industry": "Software Development",
+      "source": "perplexity",
+      "tags": [
+        "nostr",
+        "bitcoin",
+        "developer"
+      ],
+      "createdAt": "2026-02-06T20:00:25.789Z",
+      "updatedAt": "2026-02-06T20:00:25.789Z"
+    },
+    {
+      "id": "1770408016081-2",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Andre Neves",
+      "description": "Co-founder of Zebedee, a video game startup, who recruited fiatjaf for a full-time remote role to oversee NBD.WTF projects encompassing Nostr.",
+      "title": "Co-founder",
+      "company": "Zebedee",
+      "industry": "Gaming, Bitcoin",
+      "source": "perplexity",
+      "tags": [
+        "zebedee",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.789Z",
+      "updatedAt": "2026-02-06T20:00:25.789Z"
+    },
+    {
+      "id": "1770408016081-3",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "nostrica",
+      "description": "Nostrica is a Nostr relay operator (wss://relay.nostrica.com) associated with Damus, a decentralized social network on the Nostr protocol founded by William Casarin.",
+      "title": "Founder",
+      "company": "Damus",
+      "industry": "Bitcoin Infrastructure, Nostr Clients",
+      "source": "perplexity",
+      "tags": [
+        "damus",
+        "nostr",
+        "developer",
+        "enriched"
+      ],
+      "createdAt": "2026-02-06T20:00:25.789Z",
+      "updatedAt": "2026-02-06T20:09:55.090Z",
+      "twitter": "nostrica"
+    },
+    {
+      "id": "1770408016081-4",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Alex Gleason",
+      "description": "Member of nostr-protocol GitHub organization, contributing to Nostr protocol development.",
+      "role": "Developer",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.789Z",
+      "updatedAt": "2026-02-06T20:00:25.789Z"
+    },
+    {
+      "id": "1770408016081-5",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Carlito BrightonBTC",
+      "description": "Member of nostr-protocol GitHub organization, active in Nostr development.",
+      "twitter": "BrightonBTC",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-6",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Ricardo Cabral",
+      "description": "Developer known as cameri, member of nostr-protocol GitHub organization involved in Nostr.",
+      "twitter": "cameri",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-7",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Pablo Fernandez",
+      "description": "Technical advisor deeply involved with Nostr, highlights its ease of building applications; active as pablof7z in nostr-protocol GitHub.",
+      "twitter": "pablof7z",
+      "source": "perplexity",
+      "tags": [
+        "nostr",
+        "developer"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-8",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Giszmo",
+      "description": "Leo Wandersleb, member of nostr-protocol GitHub organization contributing to Nostr.",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-9",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "KoalaSat",
+      "description": "Member of nostr-protocol GitHub organization, engaged in Nostr protocol work.",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-10",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "mattn",
+      "description": "Developer in nostr-protocol GitHub organization supporting Nostr development.",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-11",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "hodlbod",
+      "description": "Developer known as staab, member of nostr-protocol GitHub contributing to Nostr.",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-12",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "v0l",
+      "description": "Kieran, member of nostr-protocol GitHub organization involved in Nostr.",
+      "source": "perplexity",
+      "tags": [
+        "nostr-protocol",
+        "github"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-13",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Melvin Carvalho",
+      "description": "Proposed the W3C Nostr Community Group in 2023 to foster intersection with web standards.",
+      "role": "Proposer",
+      "source": "perplexity",
+      "tags": [
+        "w3c",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-14",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Kingsley Idehen",
+      "description": "Supporter of W3C Nostr Community Group creation for web standards integration.",
+      "source": "perplexity",
+      "tags": [
+        "w3c",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-15",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Nathan Rixham",
+      "description": "Supported the launch of W3C Nostr Community Group.",
+      "source": "perplexity",
+      "tags": [
+        "w3c",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-16",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Daniel Renfer",
+      "description": "Supporter of W3C Nostr Community Group for documenting Nostr patterns.",
+      "source": "perplexity",
+      "tags": [
+        "w3c",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-17",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "person",
+      "name": "Andrei Ciortea",
+      "description": "Backed the creation of W3C Nostr Community Group.",
+      "source": "perplexity",
+      "tags": [
+        "w3c",
+        "nostr"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-18",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "organization",
+      "name": "Nostr Dev Team",
+      "description": "Team focused on building native Android apps and tools for Nostr, seeking developers for Graphene OS compatibility.",
+      "website": "https://nostrdev.com",
+      "email": "team@nostrdev.com",
+      "twitter": "nostrdev",
+      "source": "perplexity",
+      "tags": [
+        "nostr",
+        "development",
+        "team"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    },
+    {
+      "id": "1770408016081-19",
+      "projectId": "proj_001",
+      "queryId": "1770408016081",
+      "type": "organization",
+      "name": "nostr-protocol",
+      "description": "GitHub organization hosting Nostr protocol repositories and developers.",
+      "source": "perplexity",
+      "tags": [
+        "github",
+        "nostr",
+        "protocol"
+      ],
+      "createdAt": "2026-02-06T20:00:25.790Z",
+      "updatedAt": "2026-02-06T20:00:25.790Z"
+    }
+  ]
+}
