@@ -1,0 +1,158 @@
+// Scout Database Schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id              String   @id @default(cuid())
+  name            String
+  description     String?
+  context         String?  @db.Text // AI/business context for filtering
+  targetKeywords  String[] // Keywords to target
+  excludeKeywords String[] // Keywords to exclude
+  industry        String?
+  
+  // Relations
+  queries         Query[]
+  leads           Lead[]
+  entities        DirectoryEntity[]
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([name])
+}
+
+model Query {
+  id            String   @id @default(cuid())
+  projectId     String
+  searchTerm    String
+  improvedQuery String?  @db.Text
+  targets       String[] // SearchTarget enum values as strings
+  sources       String[] // SearchSource enum values
+  status        String   @default("pending") // pending | running | completed | failed
+  lastRun       DateTime?
+  resultCount   Int      @default(0)
+  
+  // Relations
+  project       Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  leads         Lead[]
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([status])
+}
+
+model Lead {
+  id          String   @id @default(cuid())
+  queryId     String
+  projectId   String
+  
+  // Basic info
+  url         String
+  title       String
+  description String?  @db.Text
+  
+  // Contact arrays (stored as JSON-stringified arrays)
+  emails      String[] @default([])
+  phones      String[] @default([])
+  websites    String[] @default([])
+  whatsapp    String[] @default([])
+  instagram   String[] @default([])
+  github      String[] @default([])
+  twitter     String[] @default([])
+  linkedin    String[] @default([])
+  telegram    String[] @default([])
+  discord     String[] @default([])
+  
+  // Meta
+  source          String   // brave | perplexity | enriched | manual
+  sources         String[] // All contributing sources
+  quality         String   @default("medium") // low | medium | high
+  tags            String[] @default([])
+  relevanceScore  Int?     // 0-100
+  
+  // Enrichment
+  enrichedAt      DateTime?
+  enrichmentData  Json?    // Flexible JSON for company info, key people, etc.
+  
+  // Status & notes
+  status          String   @default("new") // new | contacted | replied | converted | rejected
+  notes           String?  @db.Text
+  
+  // Relations
+  query           Query    @relation(fields: [queryId], references: [id], onDelete: Cascade)
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@unique([projectId, url]) // Prevent duplicates per project
+  @@index([queryId])
+  @@index([projectId])
+  @@index([status])
+  @@index([quality])
+}
+
+model DirectoryEntity {
+  id          String   @id @default(cuid())
+  projectId   String
+  queryId     String?
+  
+  // Type & basic info
+  type        String   // person | organization | book | product | event | place
+  name        String
+  image       String?
+  description String?  @db.Text
+  
+  // Person fields
+  title       String?
+  role        String?
+  company     String?
+  
+  // Organization fields
+  industry    String?
+  size        String?
+  founded     String?
+  headquarters String?
+  
+  // Book fields
+  author      String?
+  publisher   String?
+  year        String?
+  isbn        String?
+  
+  // Product fields
+  category    String?
+  price       String?
+  
+  // Contact/links
+  website     String?
+  email       String?
+  twitter     String?
+  linkedin    String?
+  
+  // Meta
+  source      String   // Where entity was found
+  sourceUrl   String?
+  tags        String[] @default([])
+  notes       String?  @db.Text
+  
+  // Relations
+  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([projectId])
+  @@index([type])
+  @@index([name])
+}
